@@ -13,9 +13,11 @@
 <script src="js/vendor/holder.min.js"></script> 
 <script src="js/offcanvas.js"></script> 
 
+<script src="js/axios.min.js"></script>
 <script src="js/lodash.min.js"></script>
 <script src="js/awn.min.js"></script>
 <script src="js/web3.min.js"></script>
+<script src="js/util.js"></script>
 <script src="js/wallet.js"></script>
 
 

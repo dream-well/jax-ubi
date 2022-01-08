@@ -17,6 +17,7 @@
 <!-- Custom styles for this template -->
 <link href="css/offcanvas.css" rel="stylesheet">
 <!-- Custom styles for this template -->
+<link href="css/awn.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <!-- website font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

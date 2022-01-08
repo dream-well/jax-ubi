@@ -1,6 +1,6 @@
 <?php
 
-  $base_url = "https://jaxcorp.com/";
+  $base_url = "/jax-ubi/";
 
   $home_link = $base_url;
 
