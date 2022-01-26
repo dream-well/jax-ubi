@@ -173,7 +173,7 @@ void function main() {
     // setTimeout(real_time_update, 500);
     // setInterval(real_time_update, 3000)
 
-    ethereum.on("accountsChanged", _accounts => {
+    web3.givenProvider.on("accountsChanged", _accounts => {
         accounts = _accounts
         if (accounts.length == 0) {
             reset_connect_button();
@@ -183,7 +183,7 @@ void function main() {
         }
     });
 
-    ethereum.on("networkChanged", () => {
+    web3.givenProvider.on("networkChanged", () => {
         if (web3.currentProvider.chainId != networks[active_network].chainId) {
             on_wrong_network();
             accounts = [];
@@ -192,7 +192,7 @@ void function main() {
         }
     })
     notifier = new AWN({
-        position: "top-right",
+        position: "bottom-right",
         durations: {
             success: 1000,
             alert: 0
@@ -248,7 +248,7 @@ function disconnect_wallet() {
 
 function switch_network() {
     web3.currentProvider.request({
-            method: "wallet_switchEthereumChain",
+            method: "wallet_switchweb3.givenProviderChain",
             params: [{ chainId: networks[active_network].chainId }]
         })
         .then(() => {
